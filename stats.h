@@ -14,13 +14,20 @@
  *
  * <Add Extended Description Here>
  *
- * @author <Add FirsName LastName>
- * @date <Add date >
+ * @author <Ehsan Kiumarsi>
+ * @date <19.03.2022>
  *
  */
 #ifndef __STATS_H__
 #define __STATS_H__
 
+int find_maximum(unsigned char a[], unsigned int s);
+void print_statistics(unsigned char a[], unsigned int s);
+void print_array(unsigned char a[], unsigned int s);
+int find_minimum(unsigned char a[], unsigned int s);
+void sort_array(unsigned char a[], unsigned int s);
+double find_median(unsigned char a[], unsigned int s);
+double find_mean(unsigned char a[], unsigned int s);
 /* Add Your Declarations and Function Comments here */ 
 
 /**

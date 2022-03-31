@@ -9,13 +9,13 @@
  *
  *****************************************************************************/
 /**
- * @file <Add File Name> 
- * @brief <Add Brief Description Here >
+ * @file <Stats> 
+ * @brief <This is a program to calculate some statistics of a defined array and show it in a proper manner. This statistics include Minimum, Maximum, Median and Average. It also sorts the array.>
  *
  * <Add Extended Description Here>
  *
- * @author <Add FirsName LastName>
- * @date <Add date >
+ * @author <Ehsan Kiumarsi>
+ * @date <19.03.2022>
  *
  */
 
@@ -26,6 +26,34 @@
 
 /* Size of the Data Set */
 #define SIZE (40)
+
+void print_statistics(unsigned char a[], unsigned int s) {
+}
+
+void print_array(unsigned char a[], unsigned int s) {
+}
+
+int find_maximum(unsigned char a[], unsigned int s)
+{
+	return 0;
+}
+
+int find_minimum(unsigned char a[], unsigned int s)
+{
+	return 0;
+}
+
+void sort_array(unsigned char a[], unsigned int s)
+{	
+}
+
+double find_median(unsigned char a[], unsigned int s)
+{return 0;
+}
+
+double find_mean(unsigned char a[], unsigned int s)
+{return 0;
+}
 
 void main() {
 
