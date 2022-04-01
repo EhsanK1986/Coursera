@@ -9,38 +9,90 @@
  *
  *****************************************************************************/
 /**
- * @file <Add File Name> 
- * @brief <Add Brief Description Here >
+ * @file stats.h 
+ * @brief declaration of functions for array statistics
  *
  * <Add Extended Description Here>
  *
- * @author <Ehsan Kiumarsi>
- * @date <19.03.2022>
+ * @author Ehsan Kiumarsi
+ * @date 01.04.2022
  *
  */
 #ifndef __STATS_H__
 #define __STATS_H__
 
-int find_maximum(unsigned char a[], unsigned int s);
-void print_statistics(unsigned char a[], unsigned int s);
-void print_array(unsigned char a[], unsigned int s);
-int find_minimum(unsigned char a[], unsigned int s);
-void sort_array(unsigned char a[], unsigned int s);
-double find_median(unsigned char a[], unsigned int s);
-double find_mean(unsigned char a[], unsigned int s);
-/* Add Your Declarations and Function Comments here */ 
 
+int find_maximum(unsigned char a[], unsigned int s);
 /**
- * @brief <Add Brief Description of Function Here>
+ * @brief Maximum af an array
+ * This function has two inputs of an array in type of unsigned char and an unsigned
+ * integer as the size of the array. Output of this function is the maximum of the
+ * array as an integer.
+ * @param unsigned char a[] and unsigned int s
+ * @return an integer number as maximum value
+ */
+void print_statistics(unsigned char a[], unsigned int s);
+/**
+ * @brief Printing statistics of an array
+ * This function has two inputs of an array in type of unsigned char and an unsigned
+ * integer as the size of the array. It prints the statistics of the array including
+ * minimum, maximum, mean and median of the array.
+ * @param unsigned char a[] and unsigned int s
+ * @return nothing
+ */
+void print_array(unsigned char a[], unsigned int s);
+/**
+ * @brief Printing an array
  *
- * <Add Extended Description Here>
+ * This function has two inputs of an array in type of unsigned char and an unsigned
+ * integer as the size of the array. It prints the array in a proper manner in the 
+ * consule. Also, it works correctly when the size of array changes.
+ * @param unsigned char a[] and unsigned int s
+ * @return nothing
+ */
+int find_minimum(unsigned char a[], unsigned int s);
+/**
+ * @brief Minimum af an array
  *
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
+ * This function has two inputs of an array in type of unsigned char and an unsigned
+ * integer as the size of the array. Output of this function is the minimum of the
+ * array as an integer.
+ * @param unsigned char a[] and unsigned int s
+ * @return an integer number as minimum value
+ */
+void sort_array(unsigned char a[], unsigned int s);
+/**
+ * @brief Sorting an array
  *
- * @return <Add Return Informaiton here>
+ * 
+ * This function has two inputs of an array in type of unsigned char and an unsigned
+ * integer as the size of the array. This function sorts the array in a descending 
+ * order; the zeroth would be the largest element.
+ * @param unsigned char a[] and unsigned int s
+ * @return nothing
+ */
+int find_median(unsigned char a[], unsigned int s);
+/**
+ * @brief Median af an array
+ *
+ * This function has two inputs of an array in type of unsigned char and an unsigned
+ * integer as the size of the array. Output of this function is the median of the
+ * array as an integer. In case of floating point numbers, it is rounded to nearest 
+ * smaller integer number.
+ * @param unsigned char a[] and unsigned int s
+ * @return an integer number as median value
+ */
+int find_mean(unsigned char a[], unsigned int s);
+/**
+ * @brief Average af an array
+ *
+ * This function has two inputs of an array in type of unsigned char and an unsigned
+ * integer as the size of the array. Output of this function is the average of the
+ * array as an integer. In case of floating point numbers, it is rounded to the 
+ * nearest smaller integer number.
+ * @param unsigned char a[] and unsigned int s
+ * @return an in teger number an mean value
+ *
  */
 
 
